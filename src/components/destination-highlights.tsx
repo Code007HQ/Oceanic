@@ -9,8 +9,8 @@ const destinations = [
     ports: ["Barcelona", "Monaco", "Rome", "Santorini"],
     duration: "7 Days",
     highlight: "Ancient ruins meet azure waters",
-    image: "/mediterranean-ruins-coast.png",
-    position: { top: "35%", left: "45%" },
+    image: "/mediterranean.jpg",
+    position: { top: "41%", left: "50%" },
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const destinations = [
     ports: ["Barbados", "St. Lucia", "Aruba", "Cozumel"],
     duration: "10 Days",
     highlight: "Pristine beaches and vibrant culture",
-    image: "/caribbean-beach.png",
+    image: "/caribbean.jpg",
     position: { top: "45%", left: "25%" },
   },
   {
@@ -29,7 +29,7 @@ const destinations = [
     ports: ["Reykjavik", "Tromsø", "Bergen", "Ålesund"],
     duration: "12 Days",
     highlight: "Aurora borealis and dramatic fjords",
-    image: "/norwegian-fjords-aurora.png",
+    image: "/northern-lights.jpg",
     position: { top: "20%", left: "50%" },
   },
   {
@@ -39,7 +39,7 @@ const destinations = [
     ports: ["Singapore", "Hong Kong", "Kyoto", "Shanghai"],
     duration: "14 Days",
     highlight: "Ancient traditions meet modern marvels",
-    image: "/asian-temple-city.png",
+    image: "/asian-temple.jpg",
     position: { top: "40%", left: "75%" },
   },
   {
@@ -49,8 +49,8 @@ const destinations = [
     ports: ["Juneau", "Ketchikan", "Skagway", "Glacier Bay"],
     duration: "8 Days",
     highlight: "Glaciers, wildlife, and untamed beauty",
-    image: "/alaskan-glacier-whales-mountains.png",
-    position: { top: "15%", left: "15%" },
+    image: "/alaska.jpg",
+    position: { top: "18%", left: "13%" },
   },
 ];
 
@@ -77,27 +77,17 @@ export function DestinationHighlights() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 min-[430px]:gap-12 items-start">
           {/* Interactive World Map */}
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-xl p-8 h-96 relative overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-xl p-8 aspect-video relative overflow-hidden">
               {/* Simplified World Map Background */}
-              <div className="absolute inset-0 opacity-10">
-                <svg viewBox="0 0 800 400" className="w-full h-full">
-                  {/* Simplified continent shapes */}
-                  <path
-                    d="M150 200 Q200 180 250 200 Q300 220 350 200 L350 250 Q300 270 250 250 Q200 270 150 250 Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M400 150 Q450 130 500 150 Q550 170 600 150 L600 200 Q550 220 500 200 Q450 220 400 200 Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M100 100 Q150 80 200 100 Q250 120 300 100 L300 150 Q250 170 200 150 Q150 170 100 150 Z"
-                    fill="currentColor"
-                  />
-                </svg>
+              <div className="absolute inset-0 opacity-90">
+                <img
+                  src="world-map.png"
+                  alt="world map"
+                  className="w-full h-full"
+                />
               </div>
 
               {/* Destination Markers */}
@@ -140,12 +130,33 @@ export function DestinationHighlights() {
                 </button>
               ))}
             </div>
+            {/* Quick Route Overview */}
+            <div className="grid grid-cols-2 gap-4 mt-8 max-[430px]:hidden">
+              {destinations.slice(0, 4).map((destination) => (
+                <button
+                  key={destination.id}
+                  onClick={() => setSelectedDestination(destination.id)}
+                  className={`p-4 rounded-lg border-2 transition-all text-left ${
+                    selectedDestination === destination.id
+                      ? "border-coral bg-coral/5"
+                      : "border-gray-200 hover:border-coral/50 bg-white"
+                  }`}
+                >
+                  <div className="font-semibold text-navy text-sm">
+                    {destination.name}
+                  </div>
+                  <div className="text-xs text-navy/60 mt-1">
+                    {destination.duration} • {destination.ports.length} Ports
+                  </div>
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Destination Details */}
-          <div className="space-y-6">
+          <div className="lg:mt-6">
             {selectedDestination ? (
-              <Card className="border-0 shadow-xl bg-white">
+              <Card className="border-0 shadow-xl bg-white pt-0">
                 <CardContent className="p-0">
                   {(() => {
                     const destination = destinations.find(
@@ -232,28 +243,6 @@ export function DestinationHighlights() {
                 </p>
               </div>
             )}
-
-            {/* Quick Route Overview */}
-            <div className="grid grid-cols-2 gap-4">
-              {destinations.slice(0, 4).map((destination) => (
-                <button
-                  key={destination.id}
-                  onClick={() => setSelectedDestination(destination.id)}
-                  className={`p-4 rounded-lg border-2 transition-all text-left ${
-                    selectedDestination === destination.id
-                      ? "border-coral bg-coral/5"
-                      : "border-gray-200 hover:border-coral/50 bg-white"
-                  }`}
-                >
-                  <div className="font-semibold text-navy text-sm">
-                    {destination.name}
-                  </div>
-                  <div className="text-xs text-navy/60 mt-1">
-                    {destination.duration} • {destination.ports.length} Ports
-                  </div>
-                </button>
-              ))}
-            </div>
           </div>
         </div>
       </div>
