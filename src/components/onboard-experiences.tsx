@@ -15,7 +15,7 @@ const experiences = [
       "Wine pairings from exclusive vineyards",
       "Private chef experiences available",
     ],
-    image: "/luxury-cruise-dining-chef.png",
+    image: "/culinary.jpg",
     color: "coral",
   },
   {
@@ -30,7 +30,7 @@ const experiences = [
       "Yoga and meditation pavilions",
       "Thermal suites and relaxation pools",
     ],
-    image: "/luxury-cruise-spa-wellness.png",
+    image: "/wellness.jpg",
     color: "seafoam",
   },
   {
@@ -45,7 +45,7 @@ const experiences = [
       "Cultural shows featuring local artists",
       "Exclusive nightlife venues",
     ],
-    image: "/luxury-cruise-theater-performance.png",
+    image: "/theatre.jpg",
     color: "gold",
   },
   {
@@ -60,7 +60,7 @@ const experiences = [
       "Premium linens and amenities",
       "In-suite dining and entertainment",
     ],
-    image: "/luxury-cruise-suite-ocean-view.png",
+    image: "/accommodation.jpg",
     color: "navy",
   },
 ];
