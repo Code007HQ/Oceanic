@@ -3,24 +3,22 @@ import { Button } from "@/components/ui/button";
 export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
           className="w-full h-full object-cover"
-          poster="/placeholder-cb33r.png"
-        >
-          <source src="/luxury-cruise-golden-hour.png" type="video/mp4" />
-        </video>
+          // src="hero-ship.png"
+          // src="hero-ship-2.jpg"
+          // src="hero-ship-3.jpg"
+          src="hero-ship-4.jpg"
+          alt="hero ship image"
+        />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-navy/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-6 ">
         <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Set Sail Into
           <span className="block text-gold">Luxury</span>
