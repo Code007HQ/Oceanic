@@ -11,7 +11,7 @@ const testimonials = [
     year: "2024",
     quote:
       "Our Mediterranean cruise wasn't just a vacation—it was a journey that rekindled our love for adventure and each other. Watching the sunset from our suite's balcony in Santorini while enjoying a private dinner prepared by the ship's chef was pure magic.",
-    image: "/guest-couple-mediterranean-sunset.png",
+    image: "/guest-couple-mediterranean-sunset.jpg",
     highlight: "25th Anniversary Celebration",
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     year: "2024",
     quote:
       "As a retired professor, I thought I'd seen it all. But standing on deck at 2 AM, watching the Aurora Borealis dance across the Norwegian sky while sipping hot cocoa—that moment changed my perspective on the world's remaining wonders.",
-    image: "/guest-man-northern-lights-deck.png",
+    image: "/guest-man-northern-lights-deck.jpg",
     highlight: "Bucket List Achievement",
   },
   {
@@ -33,7 +33,7 @@ const testimonials = [
     year: "2024",
     quote:
       "Three generations of our family came together for this cruise. Watching our grandchildren's faces light up during the cultural performances while my parents shared stories of their own travels—these are the moments that bind families together forever.",
-    image: "/guest-family-caribbean-cultural-show.png",
+    image: "/guest-family-caribbean-cultural-show.jpg",
     highlight: "Multi-Generational Bonding",
   },
   {
@@ -44,7 +44,7 @@ const testimonials = [
     year: "2024",
     quote:
       "Traveling solo can be intimidating, but the crew made me feel like family from day one. The cooking class in Singapore, the temple visit in Kyoto, the tai chi sessions at sunrise—I discovered not just new places, but a new version of myself.",
-    image: "/guest-woman-asian-temple-meditation.png",
+    image: "/guest-woman-asian-temple-meditation.jpg",
     highlight: "Solo Travel Transformation",
   },
   {
@@ -55,7 +55,7 @@ const testimonials = [
     year: "2024",
     quote:
       "We've been on many cruises, but nothing prepared us for the raw beauty of Alaska. When that humpback whale surfaced just meters from our ship, and we could hear its song through the hull—it was a spiritual experience that brought tears to our eyes.",
-    image: "/guest-couple-alaska-whale-watching.png",
+    image: "/guest-couple-alaska-whale-watching.jpg",
     highlight: "Wildlife Encounter",
   },
 ];
