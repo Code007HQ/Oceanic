@@ -345,18 +345,18 @@ export function PlanningTools() {
                   <div className="flex items-center gap-3">
                     <button
                       onClick={() => setGuests(Math.max(1, guests - 1))}
-                      className="w-8 h-8 rounded-full border border-navy text-navy hover:bg-navy hover:text-white transition-colors"
+                      className="w-8 h-8 rounded-full border border-navy text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center text-center"
                     >
-                      -
+                      <span className="-translate-y-0.5">-</span>
                     </button>
                     <span className="text-lg font-semibold text-navy w-8 text-center">
                       {guests}
                     </span>
                     <button
                       onClick={() => setGuests(guests + 1)}
-                      className="w-8 h-8 rounded-full border border-navy text-navy hover:bg-navy hover:text-white transition-colors"
+                      className="w-8 h-8 rounded-full border border-navy text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center"
                     >
-                      +
+                      <span className="-translate-y-0.5">+</span>
                     </button>
                   </div>
                 </div>

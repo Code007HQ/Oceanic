@@ -8,9 +8,12 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
+    <main className="h-screen overflow-y-scroll scrollbar-hidden">
+      <div className="relative min-h-screen">
+        <Navigation />
+        <HeroSection />
+      </div>
+
       <DestinationHighlights />
       <OnboardExperiences />
       <GuestStories />
