@@ -38,7 +38,7 @@ const cabinTypes = [
       "Climate control",
       "Room service",
     ],
-    image: "/cabin-interior-stateroom.png",
+    image: "/cabin-interior-stateroom.jpg",
   },
   {
     id: "oceanview",
@@ -51,7 +51,7 @@ const cabinTypes = [
       "Sitting area",
       "Premium amenities",
     ],
-    image: "/cabin-ocean-view-stateroom.png",
+    image: "/cabin-ocean-view-stateroom.jpg",
   },
   {
     id: "balcony",
@@ -64,7 +64,7 @@ const cabinTypes = [
       "Premium linens",
       "Priority boarding",
     ],
-    image: "/cabin-balcony-suite.png",
+    image: "/cabin-balcony-suite.jpg",
   },
   {
     id: "penthouse",
@@ -77,7 +77,7 @@ const cabinTypes = [
       "Premium dining",
       "Exclusive amenities",
     ],
-    image: "/cabin-penthouse-suite.png",
+    image: "/cabin-penthouse-suite.jpg",
   },
 ];
 

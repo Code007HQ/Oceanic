@@ -7,9 +7,6 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover"
-          // src="hero-ship.png"
-          // src="hero-ship-2.jpg"
-          // src="hero-ship-3.jpg"
           src="hero-ship-4.jpg"
           alt="hero ship image"
         />
@@ -30,7 +27,7 @@ export function HeroSection() {
           pristine waters.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center ml-5">
           <Button
             size="lg"
             className="bg-coral hover:bg-coral/90 text-white px-8 py-4 text-lg font-medium"
