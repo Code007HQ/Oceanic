@@ -12,6 +12,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["node"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   }
 }
